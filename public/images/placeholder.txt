@@ -1,0 +1,19 @@
+Please add appropriate images for:
+- beauty.jpg
+- electronics.jpg
+- home.jpg
+- accessories.jpg
+- night-routine.jpg
+- summer-routine.jpg
+- sunscreen.jpg
+- blush.jpg
+- serums.jpg
+- tv.jpg
+- earbuds.jpg
+- decor.jpg
+- kitchen.jpg
+- watches.jpg
+- jewelry.jpg
+- bags.jpg
+
+These images should be placed in the public/images directory.

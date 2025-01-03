@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CategoryCard from '../components/CategoryCard.astro';
+---
+
+<Layout title="Lifestyle & Beauty Blog">
+	<h1 class="page-title">✨ Welcome to Curated by Roh! ✨
+
+Every product here is handpicked with care, reflecting my love for quality, functionality, and style. From skincare that elevates your routine to gadgets, accessories, and home decor that bring joy and value to everyday life, each selection is thoughtfully chosen to inspire and delight. Let’s make life beautifully curated, one find at a time! 💛</h1>
+	<div class="category-grid">
+		<CategoryCard
+			href="/beauty"
+			title="Beauty & Skincare"
+			description="Discover the best beauty tips and skincare routines"
+			image="/images/beauty.jpg"
+		/>
+		<CategoryCard
+			href="/electronics"
+			title="Electronics"
+			description="Latest gadgets and tech recommendations"
+			image="/images/electronics.jpg"
+		/>
+		<CategoryCard
+			href="/home"
+			title="Home & Decor"
+			description="Transform your space with our decor ideas"
+			image="/images/home.jpg"
+		/>
+		<CategoryCard
+			href="/accessories"
+			title="Accessories"
+			description="Complete your look with trendy accessories"
+			image="/images/accessories.jpg"
+		/>
+	</div>
+</Layout>
+<style>
+	.page-title {
+		text-align: center;
+		color: var(--text);
+		margin-bottom: 2rem;
+		font-weight: normal; /* Make the text normal, not bold */
+		font-size: 1.2rem; /* Adjust the font size to make it smaller */
+	}
+	.category-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+</style>
+
+

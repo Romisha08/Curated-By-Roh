@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CategoryCard from '../components/CategoryCard.astro';
+---
+
+<Layout title="Accessories">
+	<a href="/" class="home-button">← Back to Home</a>
+	<h1>Accessories</h1>
+	<div class="category-grid">
+		<CategoryCard
+			href="/accessories/watches"
+			title="Watches"
+			description="Timeless watch collections"
+			image="/images/watches.jpg"
+		/>
+		<CategoryCard
+			href="/accessories/jewelry"
+			title="Jewelry"
+			description="Beautiful jewelry pieces"
+			image="/images/jewelry.jpg"
+		/>
+		<CategoryCard
+			href="/accessories/bags"
+			title="Bags"
+			description="Stylish bags for every occasion"
+			image="/images/bags.jpg"
+		/>
+	</div>
+</Layout>
+
+<style>
+	h1 {
+		color: var(--text);
+		margin-bottom: 2rem;
+	}
+	.category-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+</style>

@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CategoryCard from '../components/CategoryCard.astro';
+---
+
+<Layout title="Beauty & Skincare">
+	<a href="/" class="home-button">← Back to Home</a>
+	<h1>Beauty & Skincare</h1>
+	<div class="category-grid">
+		<CategoryCard
+			href="/beauty/night-routine"
+			title="Night Time Routine"
+			description="Perfect your evening skincare routine"
+			image="/images/night-routine.jpg"
+		/>
+		<CategoryCard
+			href="/beauty/summer-routine"
+			title="Summer Routine"
+			description="Stay glowing during the summer months"
+			image="/images/summer-routine.jpg"
+		/>
+		<CategoryCard
+			href="/beauty/sunscreen"
+			title="Favorite Sunscreens"
+			description="Best sunscreens for every skin type"
+			image="/images/sunscreen.jpg"
+		/>
+		<CategoryCard
+			href="/beauty/blush"
+			title="Favorite Blushes"
+			description="Top blush picks for a natural flush"
+			image="/images/blush.jpg"
+		/>
+		<CategoryCard
+			href="/beauty/serums"
+			title="Serums Guide"
+			description="Essential serums for your skincare routine"
+			image="/images/serums.jpg"
+		/>
+	</div>
+</Layout>
+
+<style>
+	h1 {
+		color: var(--text);
+		margin-bottom: 2rem;
+	}
+	.category-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+</style>

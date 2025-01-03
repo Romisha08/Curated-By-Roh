@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CategoryCard from '../components/CategoryCard.astro';
+---
+
+<Layout title="Home & Decor">
+	<a href="/" class="home-button">← Back to Home</a>
+	<h1>Home & Decor</h1>
+	<div class="category-grid">
+		<CategoryCard
+			href="/home/decor"
+			title="Home Decor"
+			description="Style your space beautifully"
+			image="/images/decor.jpg"
+		/>
+		<CategoryCard
+			href="/home/kitchen"
+			title="Kitchen Essentials"
+			description="Must-have kitchen appliances and tools"
+			image="/images/kitchen.jpg"
+		/>
+	</div>
+</Layout>
+
+<style>
+	h1 {
+		color: var(--text);
+		margin-bottom: 2rem;
+	}
+	.category-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+</style>

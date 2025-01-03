@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CategoryCard from '../components/CategoryCard.astro';
+---
+
+<Layout title="Electronics">
+	<a href="/" class="home-button">← Back to Home</a>
+	<h1>Electronics</h1>
+	<div class="category-grid">
+		<CategoryCard
+			href="/electronics/tv"
+			title="TV Reviews"
+			description="Find your perfect TV"
+			image="/images/tv.jpg"
+		/>
+		<CategoryCard
+			href="/electronics/earbuds"
+			title="Earbuds Guide"
+			description="Best wireless earbuds comparison"
+			image="/images/earbuds.jpg"
+		/>
+	</div>
+</Layout>
+
+<style>
+	h1 {
+		color: var(--text);
+		margin-bottom: 2rem;
+	}
+	.category-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+</style>
